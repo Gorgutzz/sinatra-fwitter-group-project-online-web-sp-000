@@ -2,6 +2,11 @@
 
 <nav>
   <% if logged_in? %>
-<a href="/signup"><button>Sign Up</button></a>
-<a href="login"><button>Log In</button></a>
 <a href="/logout"><button>Log Out</button></a>
+
+  <% else %>
+  <a href="/signup"><button>Sign Up</button></a>
+  <a href="login"><button>Log In</button></a>
+<% end %>
+
+</nav>
